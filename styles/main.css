@@ -126,7 +126,7 @@ body {
 
 .media-cover {
   width: 100%;
-  aspect-ratio: 1 / 1;     /* makes album covers perfect squares */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
 }
@@ -154,6 +154,60 @@ body {
   color: rgba(226, 232, 240, 0.35);
 }
 
+.media-grid {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.books-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.music-grid {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.media-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.media-card .media-cover {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-bottom: 0;
+}
+
 .books-grid .media-cover {
-  aspect-ratio: 2 / 3;   /* taller */
+  aspect-ratio: 2 / 3; 
+}
+
+.music-grid .media-cover {
+  aspect-ratio: 1 / 1; 
+}
+
+.media-meta {
+  padding: 0.6rem 0.75rem;
+}
+
+@media (max-width: 740px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .music-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .books-grid .media-cover { aspect-ratio: 2 / 3; }
+  .music-grid .media-cover { aspect-ratio: 1 / 1; }
 }
