@@ -91,3 +91,13 @@ body {
     left: 10px;
   }
 }
+
+.info-card {
+  background: #141f2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.info-card:hover {
+  background: linear-gradient(135deg, #1b2a4a, #243447);
+}
