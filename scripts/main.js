@@ -1,4 +1,10 @@
-const images = [
+const greetingImages = [
+  "/images/greeting/greet1.png",
+  "/images/greeting/greet2.png",
+  "/images/greeting/greet3.png"
+];
+
+const welcomeImages = [
   "/images/welcome/welcomepng1.png",
   "/images/welcome/welcomepng2.png",
   "/images/welcome/welcomepng3.png",
@@ -9,12 +15,15 @@ const images = [
   "/images/welcome/welcomepng8.png"
 ];
 
-function setRandomImage() {
-  const img = document.getElementById("welcomeImage");
-  if (!img) return;
+function setRandomImage(elementId, imageArray) {
+  const el = document.getElementById(elementId);
+  if (!el || imageArray.length === 0) return;
 
-  const randomIndex = Math.floor(Math.random() * images.length);
-  img.src = images[randomIndex];
+  const randomIndex = Math.floor(Math.random() * imageArray.length);
+  el.src = imageArray[randomIndex];
 }
 
-setRandomImage();
+window.addEventListener("DOMContentLoaded", () => {
+  setRandomImage("greetingImage", greetingImages);
+  setRandomImage("welcomeImage", welcomeImages);
+});
