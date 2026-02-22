@@ -101,3 +101,55 @@ body {
 .info-card:hover {
   background: linear-gradient(135deg, #1b2a4a, #243447);
 }
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.media-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.media-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.media-cover {
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* makes album covers perfect squares */
+  object-fit: cover;
+  display: block;
+}
+
+.media-meta {
+  padding: 0.8rem 0.9rem 1rem;
+}
+
+.media-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.stars {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.stars .filled {
+  color: var(--accent);
+}
+
+.stars .empty {
+  color: rgba(226, 232, 240, 0.35);
+}
