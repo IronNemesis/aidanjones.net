@@ -18,7 +18,8 @@ const welcomeImages = [
   "/images/welcome/welcomepng5.png",
   "/images/welcome/welcomepng6.png",
   "/images/welcome/welcomepng7.png",
-  "/images/welcome/welcomepng8.png"
+  "/images/welcome/welcomepng8.png",
+  "/images/welcome/welcomepng9.png"
 ];
 
 function setRandomImage(elementId, imageArray) {
