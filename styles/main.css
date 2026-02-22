@@ -67,3 +67,44 @@ body {
   border-radius: 12px;
   margin-bottom: 1.5rem;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Big main image */
+.welcome-image {
+  width: 100%;
+  max-height: 320px;   /* tweak */
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Small greeting overlay in upper-left */
+.greeting-image {
+  position: absolute;
+  top: 12px;           /* tweak */
+  left: 12px;          /* tweak */
+  width: 35%;          /* tweak: 25–40% usually feels good */
+  max-width: 240px;    /* keeps it from getting huge on desktop */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  padding: 6px;        /* optional, if your greeting has transparent edges */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .welcome-image {
+    max-height: 260px;
+  }
+  .greeting-image {
+    width: 55%;
+    max-width: none;
+    top: 10px;
+    left: 10px;
+  }
+}
