@@ -1,7 +1,5 @@
 const images = [
-  "/images/welcome/welcome1.png",
-  "/images/welcome/welcome2.png",
-  "/images/welcome/welcome3.png"
+  "/images/welcome/welcome1.png"
 ];
 
 function setRandomImage() {
