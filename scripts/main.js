@@ -1,7 +1,13 @@
 const greetingImages = [
   "/images/greeting/greetingpng1.png",
   "/images/greeting/greetingpng2.png",
-  "/images/greeting/greetingpng3.png"
+  "/images/greeting/greetingpng3.png",
+  "/images/greeting/greetingpng4.png",
+  "/images/greeting/greetingpng5.png",
+  "/images/greeting/greetingpng6.png",
+  "/images/greeting/greetingpng7.png",
+  "/images/greeting/greetingpng8.png",
+  "/images/greeting/greetingpng9.png"
 ];
 
 const welcomeImages = [
