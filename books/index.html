@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Books | Aidan Jones</title>
+  <title>Books | aidanjones.net</title>
   <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="/" class="logo">aidanjones.net</a>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/books/" class="active">Books</a>
-        <a href="/music/">Music</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>Books</h1>
-
-    <div class="card">
-      <h2>To the Lighthouse</h2>
-      <p>This book rocks</p>
+<header class="site-header">
+  <nav class="nav">
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/books/" class="active">Books</a>
+      <a href="/music/">Music</a>
     </div>
+  </nav>
+</header>
 
-  </main>
+<main class="container">
+  <h1>Books</h1>
+
+  <div class="media-grid">
+    <a class="media-card" href="/books/to-the-lighthouse/">
+      <img class="media-cover" src="/images/books/to-the-lighthouse.jpg" alt="To the Lighthouse cover">
+      <div class="media-meta">
+        <div class="media-title">To the Lighthouse</div>
+        <div class="media-author">Virginia Woolf</div>
+        <div class="stars" aria-label="4 out of 5 stars">
+          <span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="empty">★</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="media-card" href="/books/hannah-coulter/">
+      <img class="media-cover" src="/images/books/hannah-coulter.jpg" alt="Hannah Coulter cover">
+      <div class="media-meta">
+        <div class="media-title">Hannah Coulter</div>
+        <div class="media-author">Wendell Berry</div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</main>
 
 </body>
 </html>
