@@ -153,3 +153,7 @@ body {
 .stars .empty {
   color: rgba(226, 232, 240, 0.35);
 }
+
+.books-grid .media-cover {
+  aspect-ratio: 2 / 3;   /* taller */
+}
