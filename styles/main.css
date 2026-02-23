@@ -1,6 +1,6 @@
 :root {
   --bg: #0f172a;
-  --text: #e2e8f0;
+  --text: #cbd5e1;
   --accent: #38bdf8;
   --card: #1e293b;
 }
@@ -11,10 +11,12 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  font-size: 15px;
+  
 }
 
 .site-header {
