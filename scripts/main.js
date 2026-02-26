@@ -22,6 +22,7 @@ const welcomeImages = [
   "/images/welcome/welcomepng8.png",
   "/images/welcome/welcomepng9.png",
   "/images/welcome/welcomepng10.png",
+  "/images/welcome/welcomepng11.png",
   "/images/welcome/welcomepng15.png",
   "/images/welcome/welcomepng12.png",
   "/images/welcome/welcomepng13.png",
